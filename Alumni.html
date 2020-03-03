@@ -1,0 +1,403 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+
+#box{
+width:100%;
+height:1200px;
+margin:0px auto;
+background-color:yellow;
+}
+#header{
+width:100%;
+height:20px;
+background-color:#154360;
+border-radius:5px 5px 0 0;
+}
+#slider{
+width:100%;
+height:200px;
+background-image:url(pos.png);
+padding-top:2px;
+}
+#name{
+margin-left:10px;
+color:blue;
+}
+#textbox{
+width:450px;
+height:75px;
+background-color:RGBA(0,0,128,0.4);
+border-radius:5px 5px 5px 5px;
+color:white;
+margin:auto;
+margin-top:0px;
+padding-bottom:2px;
+color:white;
+text-align:center;
+font-size:45px;
+}
+#txt{
+width:65%;
+height:14%;
+color:white;
+margin:auto;
+background-color:RGBA(0,0,128,0.4);
+border-radius:5px 5px 5px 5px;
+text-align:center;
+font-size:15;
+}
+#imgbox{
+
+//background-color:RGBA(0,0,128,0.4);
+float:left;
+margin-left:45px;
+margin-top:50px;
+}
+
+#lgbox1{
+width:250px;
+height:400px;
+margin:auto;
+margin-top:60px;
+padding:5px;
+background-color: rgba(86, 169, 220, 0.34);
+//border:5px solid #154360;
+color:white;
+border-radius:5px 5px 5px 5px;
+font-size:15px;
+}
+
+#lgbox{
+width:250px;
+height:400px;
+//background-color:white;
+margin:auto;
+margin-right:185px;
+//border:5px solid #154360;
+margin-top:60px;
+color:white;
+border-radius:5px 5px 5px 5px;
+font-size:15px;
+}
+
+#mapbox{
+width:100%;
+height:777px;
+background-color:#48D1CC;
+margin:0px auto;
+}
+
+#footer{
+width:100%;
+height:200px;
+background-color:#154360;
+bottom:0;
+color: white;
+text-align: center;
+border-radius:5px 5px 5px 5px;
+}
+
+
+.button{
+width:60px;
+height:30px;
+background-color:#2ECC71;
+color:blue;
+text-align:center;
+padding:0 auto;
+padding-top:6px;
+border-radius:5px 5px 5px 5px;
+display:inline-block;
+text-decoration:none;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #154360;
+}
+
+li {
+  float: left;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+//boxess
+
+.news{
+width:100%;
+height:777px;
+background-color:white;
+}
+input{
+padding:4px;
+display:block;
+border:none;
+border-bottom:1px solid #ccc;
+width:100%}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+</head>
+<body bgcolor="#DAF7A6">
+<div id="box">
+
+<div id="header">
+</div>
+
+<div id="slider">
+<div id="imgbox">
+<img src="https://www.sbsstc.ac.in/IMGs/LogoWG.png" alt="LogoWG"style="width:120px;
+height:120px;">
+</div>
+<div id="txt">
+<p>SHAHEED BHAGAT SINGH STATE TECHNICAL CAMPUS FEROZEPUR, PUNJAB (152004)<p>
+</div>
+<div id="textbox">
+<p>Alumni Association</p>
+</div>
+</div>
+
+<div id="mapbox">
+<div class="w3-bar w3" style="background-color:#154360;color:white">
+  <a class="w3-bar-item w3-button" onclick="openCity('Home')">Home</a>
+  <button class="w3-bar-item w3-button" onclick="openCity('Contact')">Contact/Enquery</button>
+  <button class="w3-bar-item w3-button" onclick="openCity('reg')">Register/LogIn</button>
+  <button class="w3-bar-item w3-button" onclick="openCity('HOSTEL')">HOSTEL</button>
+</div>
+
+
+
+<div id="Home" class="w3-container city" style="display:">
+  <h2>Home</h2>
+  <marquee><p>Paris is the capital of France.</p></marquee> 
+  <div id="mobile-share">
+<a href="whatsapp://send?text=Please">Whatsapp Share</a>
+</div>
+
+</div>
+<div id="Contact" class="w3-container city" style="display:none">
+  <h2>Contact</h2>
+  <p>Paris is the capital of France.</p> 
+  <table>
+  <tr>
+    <th>HOSTEL</th>
+    <th>Warden</th>
+    <th>Manager</th>
+    <th>Contact</th>
+  </tr>
+  <tr>
+    <td>Ganga Bhawan</td>
+    <td>Maria Anders</td>
+    <td>Germany</td>
+    <td>5555898643</td>
+  </tr>
+   <tr>
+    <td>Yamuna Bhawan</td>
+    <td>Maria Anders</td>
+    <td>Germany</td>
+    <td>5555898643</td>
+  </tr>
+   <tr>
+    <td>Satluj Bhawan</td>
+    <td>Maria Anders</td>
+    <td>Germany</td>
+    <td>5555898643</td>
+  </tr>
+   <tr>
+    <td>Beas Bhawan</td>
+    <td>Maria Anders</td>
+    <td>Germany</td>
+    <td>5555898643</td>
+  </tr>
+  </table>
+</div>
+<div id="reg" class="w3-container city" style="display:none">
+  <h2>HOSTEL SEAT ALLOATMENT</h2>
+  <p>Paris is the capital of France.</p> 
+  <button> <a href="reg.py" style="text-decoration:none">Student/Register Here</a></button>
+<button> <a href="log.py" style="text-decoration:none">Student/LogIn Here</a></button>
+    <!--div id="lgbox">
+  <div id="lgbox1">
+  <p style="text-align:center;color:#154360;font-size:32px">SignIn</p>
+  <p>Email<p>
+  <input></input>
+    <p>password<p>
+  <input></input>
+  <br>
+  <button>SignIn</button>
+  <a href="signup1.py"><p>new user! SignUp<p></a>
+  <a href="cgi.py"><p>new user! SignUp<p></a>
+  </div>
+  </div-->
+</div>
+
+<div id="HOSTEL" class="w3-container city" style="display:none">
+  <h2>HOSTEL</h2>
+  <marquee><p>Tokyo is the capital of Japan.</p></marquee>
+  <div class="w3-bar w3" style="background-color:#154360;color:white;border-radius:5px 5px 5px 5px">
+  <button class="w3-bar-item w3-button" onclick="openCity('Ganga Bhawan')">Ganga Bhawan</button>
+  <button class="w3-bar-item w3-button" onclick="openCity('Yamuna Bhawan')">Yamuna Bhawan</button>
+  <button class="w3-bar-item w3-button" onclick="openCity('Satluj Bhawan')">Satluj Bhawan</button>
+  <button class="w3-bar-item w3-button" onclick="openCity('Beas Bhawan')">Beas Bhawan</button>
+</div>
+</div>
+<div id="Ganga Bhawan" class="w3-container city" style="display:none">
+  <h2>Ganga Bhawan</h2>
+  <p>Paris is the capital of France.</p>
+  <a href="new.py">check</a>
+  <a href="#">Room</a>
+  <a href="#">Mess</a>
+  <a>employee/workers</a>
+  <a>students</a>
+  <table>
+  <tr>
+    <th>Roll No</th>
+    <th>Room No</th>
+    <th>Bed No</th>
+  </tr>
+  <tr>
+    <td>Alfreds Futterkiste</td>
+    <td>Maria Anders</td>
+    <td>Germany</td>
+  </tr>
+  </table>
+</div>
+<div id="Yamuna Bhawan" class="w3-container city" style="display:none">
+  <h2>Yamuna Bhawan</h2>
+  <p>Paris is the capital of France.</p> 
+  <table>
+  <tr>
+    <th>Roll No</th>
+    <th>Room No</th>
+    <th>Bed No</th>
+  </tr>
+  <tr>
+    <td>Alfreds Futterkiste</td>
+    <td>Maria Anders</td>
+    <td>Germany</td>
+  </tr>
+  </table>
+</div>
+<div id="Satluj Bhawan" class="w3-container city" style="display:none">
+  <h2>Satluj Bhawan</h2>
+  <p>Paris is the capital of France.</p>
+<table>
+  <tr>
+    <th>Roll No</th>
+    <th>Room No</th>
+    <th>Bed No</th>
+  </tr>
+  <tr>
+    <td>Alfreds Futterkiste</td>
+    <td>Maria Anders</td>
+    <td>Germany</td>
+  </tr>
+  </table>  
+</div>
+<div id="Beas Bhawan" class="w3-container city" style="display:none">
+  <h2>Beas Bhawan</h2>
+  <p>Paris is the capital of France.</p> 
+  <table>
+  <tr>
+    <th>Roll No</th>
+    <th>Room No</th>
+    <th>Bed No</th>
+  </tr>
+  <tr>
+    <td>Alfreds Futterkiste</td>
+    <td>Maria Anders</td>
+    <td>Germany</td>
+  </tr>
+  </table>
+</div>
+</div>
+
+<div id="footer">
+<table style="color:white">
+	<tr>
+		<th>Contact</th>
+		<th>Help</th>
+		<th>Menu</th>
+	</tr>
+	<tr>
+		<th>Contact</th>
+		<th>Help</th>
+		<th>Menu</th>
+	</tr>
+	<tr>
+		<th>Contact</th>
+		<th>Help</th>
+		<th>Menu</th>
+	</tr>
+</table>
+</div>
+
+<script>
+function openCity(cityName) {
+  var i;
+  var x = document.getElementsByClassName("city");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  document.getElementById(cityName).style.display = "block";  
+}
+</script>
+</body>
+</html>
